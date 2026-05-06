@@ -257,10 +257,318 @@ Replace `:vacancyId` with the `_id` from the vacancy (e.g., `664abc123...`).
 
 ---
 
+## 🎓 Alumni API
+
+### Endpoints Overview
+
+| Method | Endpoint | Description | Access |
+|---|---|---|---|
+| GET | `/api/alumni` | Get all alumni records | Public |
+| POST | `/api/alumni` | Create a new alumni record | Admin |
+| PUT | `/api/alumni/:id` | Update an alumni record | Admin |
+| DELETE | `/api/alumni/:id` | Delete an alumni record | Admin |
+
+> **Note:** Create and Update requests with file uploads must use `multipart/form-data`.
+
+---
+
+### 1. Get All Alumni
+
+**URL:** `GET /api/alumni`
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "_id": "664abc123...",
+      "name": "S Sadhiksh Velamuri",
+      "passingYear": 2024,
+      "school": "The Kalyani school",
+      "college": "Narsee Monjee Institute of Management Studies, Mumbai",
+      "major": "Business Management",
+      "image": "uploads/alumni-images/1234567890.jpg",
+      "createdAt": "...",
+      "updatedAt": "..."
+    }
+  ]
+}
+```
+
+---
+
+### 2. Create a New Alumni
+
+**URL:** `POST /api/alumni`
+
+**Body:** `form-data`
+
+| Key | Value | Type |
+|-----|-------|------|
+| `name` | S Sadhiksh Velamuri | Text |
+| `passingYear` | 2024 | Text |
+| `school` | The Kalyani school | Text |
+| `college` | Narsee Monjee Institute of Management Studies, Mumbai | Text |
+| `major` | Business Management | Text |
+| `image` | *(select image file)* | File |
+
+> **Supported image formats:** JPEG, JPG, PNG, WEBP — Max size: 2MB
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Alumni created successfully",
+  "data": {
+    "_id": "664abc123...",
+    "name": "S Sadhiksh Velamuri",
+    "passingYear": 2024,
+    "school": "The Kalyani school",
+    "college": "Narsee Monjee Institute of Management Studies, Mumbai",
+    "major": "Business Management",
+    "image": "uploads/alumni-images/1234567890.jpg"
+  }
+}
+```
+
+---
+
+### 3. Update an Alumni
+
+**URL:** `PUT /api/alumni/:id`
+
+**Body:** `form-data` (Same fields as Create, all optional)
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Alumni updated successfully",
+  "data": { ... }
+}
+```
+
+---
+
+### 4. Delete an Alumni
+
+**URL:** `DELETE /api/alumni/:id`
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Alumni deleted successfully"
+}
+```
+
+---
+
+## 📅 Recent Activities API
+
+### Endpoints Overview
+
+| Method | Endpoint | Description | Access |
+|---|---|---|---|
+| GET | `/api/activities` | Get all recent activities | Public |
+| POST | `/api/activities` | Create a new activity | Admin |
+| PUT | `/api/activities/:id` | Update an activity | Admin |
+| DELETE | `/api/activities/:id` | Delete an activity | Admin |
+
+> **Note:** Create and Update requests with file uploads must use `multipart/form-data`.
+
+---
+
+### 1. Get All Activities
+
+**URL:** `GET /api/activities`
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "_id": "664cde123...",
+      "title": "Founder's Day Celebration 2024",
+      "image": "uploads/activity-images/1234567890.jpg",
+      "createdAt": "...",
+      "updatedAt": "..."
+    }
+  ]
+}
+```
+
+---
+
+### 2. Create a New Activity
+
+**URL:** `POST /api/activities`
+
+**Body:** `form-data`
+
+| Key | Value | Type |
+|-----|-------|------|
+| `title` | Founder's Day Celebration 2024 | Text |
+| `image` | *(select image file)* | File |
+
+> **Supported image formats:** JPEG, JPG, PNG, WEBP — Max size: 2MB
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Activity created successfully",
+  "data": { ... }
+}
+```
+
+---
+
+### 3. Update an Activity
+
+**URL:** `PUT /api/activities/:id`
+
+**Body:** `form-data` (Same fields as Create, all optional)
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Activity updated successfully",
+  "data": { ... }
+}
+```
+
+---
+
+### 4. Delete an Activity
+
+**URL:** `DELETE /api/activities/:id`
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Activity deleted successfully"
+}
+```
+
+---
+
+## 📰 Latest Updates API
+
+### Endpoints Overview
+
+| Method | Endpoint | Description | Access |
+|---|---|---|---|
+| GET | `/api/updates` | Get all latest updates | Public |
+| POST | `/api/updates` | Create a new update | Admin |
+| PUT | `/api/updates/:id` | Edit an existing update | Admin |
+| DELETE | `/api/updates/:id` | Delete an update | Admin |
+
+> **Note:** Create and Update requests with file uploads must use `multipart/form-data`.
+
+---
+
+### 1. Get All Updates
+
+**URL:** `GET /api/updates`
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "_id": "664cde123...",
+      "title": "Honoring the Visionary - Dr. B.R. Ambedkar Jayanti",
+      "description": "Special assembly of grade XII A...",
+      "link": "https://instagram.com/p/...",
+      "image": "uploads/update-images/1234567890.jpg",
+      "createdAt": "...",
+      "updatedAt": "..."
+    }
+  ]
+}
+```
+
+---
+
+### 2. Create a New Update
+
+**URL:** `POST /api/updates`
+
+**Body:** `form-data`
+
+| Key | Value | Type |
+|-----|-------|------|
+| `title` | Honoring the Visionary... | Text |
+| `description` | Special assembly... | Text |
+| `link` | https://instagram.com/p/... | Text |
+| `image` | *(select image file)* | File |
+
+> **Supported image formats:** JPEG, JPG, PNG, WEBP — Max size: 2MB
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Latest Update created successfully",
+  "data": { ... }
+}
+```
+
+---
+
+### 3. Update a Latest Update
+
+**URL:** `PUT /api/updates/:id`
+
+**Body:** `form-data` (Same fields as Create, all optional)
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Latest Update updated successfully",
+  "data": { ... }
+}
+```
+
+---
+
+### 4. Delete a Latest Update
+
+**URL:** `DELETE /api/updates/:id`
+
+**Success Response:**
+
+```json
+{
+  "success": true,
+  "message": "Latest Update deleted successfully"
+}
+```
+
+---
+
 ## 🗄️ Database Info
 
 * Database: `schooldata`
-* Collection: `enquiries`,`careers`
+* Collections: `enquiries`, `careers`, `alumnis`, `activities`, `latestupdates`
 * Automatically created on first insert
 
 ---
@@ -281,5 +589,14 @@ db.enquiries.find().pretty()
 
 // Careers
 db.careers.find().pretty()
+
+// Alumni
+db.alumnis.find().pretty()
+
+// Activities
+db.activities.find().pretty()
+
+// Latest Updates
+db.latestupdates.find().pretty()
  
 ```
