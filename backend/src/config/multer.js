@@ -39,5 +39,40 @@ const createStorage = (folder) =>
   }
 });
 
+// Alumni image
+ const uploadAlumniImage = multer({
+  storage: createStorage("alumni-images"),
+  limits: { fileSize: 2 * 1024 * 1024 }, // 2MB
+  fileFilter: (req, file, cb) => {
+    const allowed = /image\/(jpeg|jpg|png|webp)/;
+    allowed.test(file.mimetype)
+      ? cb(null, true)
+      : cb(new Error("Only JPEG/PNG/WEBP images allowed"));
+  }
+});
 
-module.exports = { uploadResume, uploadCareerImage };
+// Activity image
+ const uploadActivityImage = multer({
+  storage: createStorage("activity-images"),
+  limits: { fileSize: 2 * 1024 * 1024 }, // 2MB
+  fileFilter: (req, file, cb) => {
+    const allowed = /image\/(jpeg|jpg|png|webp)/;
+    allowed.test(file.mimetype)
+      ? cb(null, true)
+      : cb(new Error("Only JPEG/PNG/WEBP images allowed"));
+  }
+});
+
+// Latest Update image
+ const uploadUpdateImage = multer({
+  storage: createStorage("update-images"),
+  limits: { fileSize: 2 * 1024 * 1024 }, // 2MB
+  fileFilter: (req, file, cb) => {
+    const allowed = /image\/(jpeg|jpg|png|webp)/;
+    allowed.test(file.mimetype)
+      ? cb(null, true)
+      : cb(new Error("Only JPEG/PNG/WEBP images allowed"));
+  }
+});
+
+module.exports = { uploadResume, uploadCareerImage, uploadAlumniImage, uploadActivityImage, uploadUpdateImage };
