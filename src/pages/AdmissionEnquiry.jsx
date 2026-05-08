@@ -39,7 +39,7 @@ export default function AdmissionEnquiry() {
   try {
 
     const response = await axios.post(
-      "/api/enquiry",
+      "https://abc-school.onrender.com/api/enquiry",
       formData
     );
 
