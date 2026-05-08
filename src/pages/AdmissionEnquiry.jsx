@@ -37,6 +37,7 @@ export default function AdmissionEnquiry() {
 
   console.log("FORM DATA:", formData);
 
+  
   try {
 
     const response = await axios.post(
