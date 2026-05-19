@@ -28,7 +28,7 @@ export default function ParentPortal() {
           </svg>
           <div>
             <div className="text-xs text-gray-400">The</div>
-            <div className="text-lg font-extrabold text-[#0d9488]">The Kalyani School</div>
+            <div className="text-lg font-extrabold text-[#0d9488]">The ABC School</div>
             <div className="text-[10px] text-gray-400">॥ अक्षयं ज्ञानम् ॥</div>
           </div>
         </div>

@@ -117,7 +117,7 @@ export default function AdmissionEnquiry() {
             className="font-bold text-lg hover:underline"
             style={{ color: "#167f64" }}
           >
-            The Kalyani School
+            The ABC School
           </Link>
         </div>
 

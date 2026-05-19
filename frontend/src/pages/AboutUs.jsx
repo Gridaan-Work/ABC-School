@@ -45,7 +45,7 @@ export default function AboutUs() {
             </svg>
             <div>
               <div className="text-xs text-gray-400 leading-none">The</div>
-              <div className="text-sm font-extrabold text-[#1e3a5f] leading-tight">Kalyani School</div>
+              <div className="text-sm font-extrabold text-[#1e3a5f] leading-tight">ABC School</div>
             </div>
           </div>
 
@@ -126,7 +126,7 @@ export default function AboutUs() {
               ))}
               {/* School name sign */}
               <rect x="350" y="230" width="740" height="50" fill="rgba(0,0,0,0.3)" rx="4"/>
-              <text x="720" y="263" textAnchor="middle" fill="white" fontSize="26" fontWeight="bold" fontFamily="sans-serif" opacity="0.7">THE KALYANI SCHOOL</text>
+              <text x="720" y="263" textAnchor="middle" fill="white" fontSize="26" fontWeight="bold" fontFamily="sans-serif" opacity="0.7">THE ABC SCHOOL</text>
               {/* Greenery */}
               {[130, 280, 1100, 1250].map((x) => (
                 <ellipse key={x} cx={x} cy="295" rx="35" ry="50" fill="#4a8a3a" opacity="0.8"/>
@@ -135,7 +135,7 @@ export default function AboutUs() {
           </div>
           {/* Page Title */}
           <div className="relative z-20 flex items-center h-full px-8 md:px-16">
-            <h1 className="text-white text-3xl md:text-4xl font-bold drop-shadow-lg">The Kalyani School</h1>
+            <h1 className="text-white text-3xl md:text-4xl font-bold drop-shadow-lg">The ABC School</h1>
           </div>
           {/* Left panel overlay with logo info */}
           <div className="absolute left-0 top-0 bottom-0 w-52 md:w-64 bg-white z-20 flex flex-col items-center justify-center px-4 py-4 border-r border-gray-100">
@@ -146,7 +146,7 @@ export default function AboutUs() {
             </svg>
             <div className="text-center mt-1">
               <div className="text-xs text-gray-400">The</div>
-              <div className="text-lg font-extrabold text-[#1e3a5f]">Kalyani</div>
+              <div className="text-lg font-extrabold text-[#1e3a5f]">ABC</div>
               <div className="text-lg font-extrabold text-[#1e3a5f]">School</div>
             </div>
             <div className="text-xs text-gray-500 mt-1">॥ अक्षयं ज्ञानम् ॥</div>
@@ -183,12 +183,12 @@ export default function AboutUs() {
       <main className="max-w-4xl mx-auto px-6 py-12">
 
         {/* About Text */}
-        <h2 className="text-2xl font-extrabold text-[#1e3a5f] mb-5">The Kalyani school</h2>
+        <h2 className="text-2xl font-extrabold text-[#1e3a5f] mb-5">The ABC school</h2>
         <p className="text-gray-600 text-sm leading-7 mb-5">
-          For the past decade, The Kalyani School has proudly upheld a legacy of educational excellence. Guided by the philosophy of Padmashri Mrs. Manju Bharat Ram, her daughter Mrs. Deeksha Kalyani founded the school in 2015. From a young age she was inspired by her mother and wanted to build an institution like The Shri Ram Schools, in Pune. In a short span of time, The Kalyani School has created a name for itself that is considered synonymous with quality education. By providing students with opportunities for self-awareness, character development, and global exposure, it serves as a hub for holistic growth. Above all, the school places students and their mental well-being at the heart of its mission, fostering an environment where learners thrive and truly enjoy their educational journey.
+          For the past decade, The ABC School has proudly upheld a legacy of educational excellence. Guided by the philosophy of Padmashri Mrs. Manju Bharat Ram, her daughter Mrs. Deeksha ABC founded the school in 2015. From a young age she was inspired by her mother and wanted to build an institution like Demo School 1s, in Pune. In a short span of time, The ABC School has created a name for itself that is considered synonymous with quality education. By providing students with opportunities for self-awareness, character development, and global exposure, it serves as a hub for holistic growth. Above all, the school places students and their mental well-being at the heart of its mission, fostering an environment where learners thrive and truly enjoy their educational journey.
         </p>
         <p className="text-gray-600 text-sm leading-7 mb-8">
-          Promoted by the Kalyani Group under the aegis of the Akutai Kalyani Charitable Trust, The Kalyani School believes in guiding the mind, body and spirit of the young generation, helping them discover and realize their full potential as individuals and moulding them to be responsible citizens of society. We provide our children with a harmonious, stimulating learning environment; encouraging them to think independently, to respect themselves and others, and to value excellence.
+          Promoted by the ABC Group under the aegis of the Akutai ABC Charitable Trust, The ABC School believes in guiding the mind, body and spirit of the young generation, helping them discover and realize their full potential as individuals and moulding them to be responsible citizens of society. We provide our children with a harmonious, stimulating learning environment; encouraging them to think independently, to respect themselves and others, and to value excellence.
         </p>
 
         <button className="bg-[#0d7a5f] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#0a6650] transition-all mb-12">
@@ -301,10 +301,10 @@ export default function AboutUs() {
               <span className="text-4xl">👩‍💼</span>
             </div>
             <div>
-              <h4 className="font-bold text-[#1e3a5f] text-lg mb-1">Mrs. Deeksha Kalyani</h4>
+              <h4 className="font-bold text-[#1e3a5f] text-lg mb-1">Mrs. Deeksha ABC</h4>
               <p className="text-sm text-[#84cc16] font-semibold mb-3">Founder & Director</p>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Inspired by Padmashri Mrs. Manju Bharat Ram's philosophy of education, Mrs. Deeksha Kalyani founded The Kalyani School in 2015 with a vision to create an institution synonymous with quality education in Pune — one where every child thrives holistically.
+                Inspired by Padmashri Mrs. Manju Bharat Ram's philosophy of education, Mrs. Deeksha ABC founded The ABC School in 2015 with a vision to create an institution synonymous with quality education in Pune — one where every child thrives holistically.
               </p>
             </div>
           </div>
@@ -328,7 +328,7 @@ export default function AboutUs() {
               <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-blue-100" />
               <div className="relative z-10 text-center">
                 <div className="text-2xl">📍</div>
-                <div className="text-xs font-bold text-gray-700">The Kalyani School</div>
+                <div className="text-xs font-bold text-gray-700">The ABC School</div>
                 <div className="text-[10px] text-gray-500">Manjari, Pune</div>
               </div>
             </div>
@@ -347,7 +347,7 @@ export default function AboutUs() {
               </div>
               <div className="flex items-center gap-2">
                 <span>✉️</span>
-                <p className="text-sm">info@thekalyanischool.edu.in</p>
+                <p className="text-sm">info@theABCschool.edu.in</p>
               </div>
             </div>
           </div>
@@ -394,8 +394,8 @@ export default function AboutUs() {
             <div className="w-10 h-0.5 bg-orange-400 mb-4" />
             <div className="flex flex-col gap-3">
               {[
-                { name: "The Shri Ram School", emoji: "🏫" },
-                { name: "Shri Educare", emoji: "🎓" },
+                { name: "Demo School 1", emoji: "🏫" },
+                { name: "ABC Educare", emoji: "🎓" },
               ].map((c) => (
                 <div key={c.name} className="bg-white rounded-xl p-3 flex items-center gap-3">
                   <span className="text-2xl">{c.emoji}</span>
@@ -407,8 +407,8 @@ export default function AboutUs() {
         </div>
 
         <div className="border-t border-white/20 px-6 py-3 flex items-center justify-between max-w-7xl mx-auto">
-          <p className="text-xs text-white/50">© 2025 The Kalyani School, Pune. All rights reserved.</p>
-          <p className="text-xs text-white/50">Crafted with ❤️ by Evonia</p>
+          <p className="text-xs text-white/50">© 2025 The ABC School, Pune. All rights reserved.</p>
+          <p className="text-xs text-white/50">developed by Gridaan❤️</p>
         </div>
       </footer>
 

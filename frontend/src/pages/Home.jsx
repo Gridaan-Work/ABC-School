@@ -6,19 +6,19 @@ const NAV_LINKS = ["About", "Academics", "Admissions", "Activities", "Gallery", 
 const AWARDS = [
   {
     title: "QS I-GAUGE",
-    desc: "The Kalyani School has achieved a DIAMOND+ level in the QS I-GAUGE rating for Indian schools.",
+    desc: "The ABC School has achieved a DIAMOND+ level in the QS I-GAUGE rating for Indian schools.",
     side: "left",
     color: "#f59e0b",
   },
   {
     title: "Education World: C-Fore Rankings",
-    desc: "C-Fore has ranked The Kalyani School 1st in Pune amongst all the CBSE schools for following the National Curriculum.",
+    desc: "C-Fore has ranked The ABC School 1st in Pune amongst all the CBSE schools for following the National Curriculum.",
     side: "left",
     color: "#84cc16",
   },
   {
     title: "National Green School Rankings",
-    desc: "The Kalyani School, Pune, Maharashtra, has been honoured with the Platinum Category of The Climate Project Foundation's Green Campus Programme Award in 2025.",
+    desc: "The ABC School, Pune, Maharashtra, has been honoured with the Platinum Category of The Climate Project Foundation's Green Campus Programme Award in 2025.",
     side: "left",
     color: "#10b981",
   },
@@ -30,13 +30,13 @@ const AWARDS = [
   },
   {
     title: "IC3 Institute",
-    desc: "The Kalyani School has been awarded the accreditation level Grade A+ accredited by the IC3 Institute.",
+    desc: "The ABC School has been awarded the accreditation level Grade A+ accredited by the IC3 Institute.",
     side: "right",
     color: "#10b981",
   },
 ];
 
-export default function KalyaniSchool() {
+export default function ABCSchool() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -64,7 +64,7 @@ export default function KalyaniSchool() {
             </svg>
             <div>
               <div className="text-xs text-gray-400 leading-none font-medium">The</div>
-              <div className="text-base font-extrabold text-[#1e3a5f] leading-tight tracking-tight">Kalyani School</div>
+              <div className="text-base font-extrabold text-[#1e3a5f] leading-tight tracking-tight">ABC School</div>
             </div>
           </div>
 
@@ -132,7 +132,7 @@ export default function KalyaniSchool() {
             </svg>
             <div className="text-center mt-2">
               <div className="text-sm text-gray-400">The</div>
-              <div className="text-2xl font-extrabold text-[#1e3a5f]">Kalyani</div>
+              <div className="text-2xl font-extrabold text-[#1e3a5f]">ABC</div>
               <div className="text-2xl font-extrabold text-[#1e3a5f]">School</div>
             </div>
             <div className="text-sm text-gray-500 mt-1 font-medium">॥ अक्षयं ज्ञानम् ॥</div>
@@ -274,7 +274,7 @@ export default function KalyaniSchool() {
         <div className="text-center mb-14">
           <h2 className="text-4xl md:text-5xl font-light text-gray-700">
             Welcome to{" "}
-            <span className="font-extrabold text-[#1e3a5f]">The Kalyani School</span>
+            <span className="font-extrabold text-[#1e3a5f]">The ABC School</span>
           </h2>
           <div className="w-24 h-1 bg-orange-400 mx-auto mt-4 rounded-full" />
         </div>
@@ -323,7 +323,7 @@ export default function KalyaniSchool() {
               A school that every child, parent, and teacher loves
             </h3>
             <p className="text-gray-600 text-base leading-relaxed mb-6">
-              At The Kalyani School, happiness is at the heart of learning. Experience an environment where every child feels valued, every parent feels heard, and every teacher feels inspired.
+              At The ABC School, happiness is at the heart of learning. Experience an environment where every child feels valued, every parent feels heard, and every teacher feels inspired.
             </p>
             <button className="border-2 border-gray-300 text-gray-700 font-semibold px-6 py-3 rounded-xl hover:border-[#84cc16] hover:text-[#84cc16] transition-all flex items-center gap-2 mb-8">
               → Explore More
@@ -341,7 +341,7 @@ export default function KalyaniSchool() {
                       </svg>
                     </div>
                     <div>
-                      <div className="text-xs text-gray-500">KALYANI</div>
+                      <div className="text-xs text-gray-500">ABC</div>
                       <div className="text-xs font-semibold text-gray-700">Driving Innovation</div>
                     </div>
                   </div>
@@ -351,11 +351,11 @@ export default function KalyaniSchool() {
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-1">
                       <span className="text-lg">🎓</span>
-                      <span className="text-xs font-bold text-blue-700">SHRI EDUCARE</span>
+                      <span className="text-xs font-bold text-blue-700">ABC Educare</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <span className="text-lg">🏫</span>
-                      <span className="text-xs font-bold text-red-700">THE SHRI RAM SCHOOL</span>
+                      <span className="text-xs font-bold text-red-700">Demo School 1</span>
                     </div>
                   </div>
                 </div>
@@ -408,7 +408,7 @@ export default function KalyaniSchool() {
                         <path d="M25 10 L10 42" stroke="#1e3a5f" strokeWidth="5" strokeLinecap="round"/>
                         <circle cx="25" cy="10" r="4" fill="#f59e0b"/>
                       </svg>
-                      <div className="text-xs font-bold text-[#1e3a5f] mt-1">The Kalyani</div>
+                      <div className="text-xs font-bold text-[#1e3a5f] mt-1">The ABC</div>
                       <div className="text-xs font-bold text-[#1e3a5f]">School</div>
                       <div className="text-[9px] text-gray-400 mt-1">॥ अक्षयं ज्ञानम् ॥</div>
                     </div>
@@ -488,7 +488,7 @@ export default function KalyaniSchool() {
                       {alumni.avatar}
                     </div>
                     <h4 className="font-bold text-[#0d9488] text-base text-center">{alumni.name}</h4>
-                    <p className="text-xs font-semibold text-gray-600 mt-0.5">{alumni.year} – The Kalyani school</p>
+                    <p className="text-xs font-semibold text-gray-600 mt-0.5">{alumni.year} – The ABC school</p>
                   </div>
                   <div className="border-t border-gray-100 pt-4 space-y-2">
                     <div className="flex items-start gap-2">
@@ -610,7 +610,7 @@ export default function KalyaniSchool() {
                 In this digital era, we recognize the importance of staying connected and fostering a sense of community, especially since we live in such a fast paced world.
               </p>
               <p className="text-white/80 text-sm leading-relaxed mt-3 max-w-sm">
-                The Kalyani School newsletter will serve as a platform to bridge the gap between home and school, bringing you closer to the remarkable journey of learning, growth, and discovery that unfolds within our vibrant walls.
+                The ABC School newsletter will serve as a platform to bridge the gap between home and school, bringing you closer to the remarkable journey of learning, growth, and discovery that unfolds within our vibrant walls.
               </p>
             </div>
 
@@ -657,7 +657,7 @@ export default function KalyaniSchool() {
               <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-blue-100" />
               <div className="relative z-10 text-center">
                 <div className="text-2xl">📍</div>
-                <div className="text-xs font-bold text-gray-700">The Kalyani School</div>
+                <div className="text-xs font-bold text-gray-700">The ABC School</div>
                 <div className="text-[10px] text-gray-500">Manjari, Pune</div>
               </div>
             </div>
@@ -676,7 +676,7 @@ export default function KalyaniSchool() {
               </div>
               <div className="flex items-center gap-2">
                 <span>✉️</span>
-                <p className="text-sm">info@thekalyanischool.edu.in</p>
+                <p className="text-sm">info@theABCschool.edu.in</p>
               </div>
             </div>
           </div>
@@ -723,8 +723,8 @@ export default function KalyaniSchool() {
             <div className="w-10 h-0.5 bg-orange-400 mb-4" />
             <div className="flex flex-col gap-3">
               {[
-                { name: "The Shri Ram School", emoji: "🏫" },
-                { name: "Shri Educare", emoji: "🎓" },
+                { name: "Demo School 1", emoji: "🏫" },
+                { name: "ABC Educare", emoji: "🎓" },
               ].map((c) => (
                 <div key={c.name} className="bg-white rounded-xl p-3 flex items-center gap-3">
                   <span className="text-2xl">{c.emoji}</span>
@@ -736,8 +736,8 @@ export default function KalyaniSchool() {
         </div>
 
         <div className="border-t border-white/20 px-6 py-3 flex items-center justify-between max-w-7xl mx-auto">
-          <p className="text-xs text-white/50">© 2025 The Kalyani School, Pune. All rights reserved.</p>
-          <p className="text-xs text-white/50">Crafted with ❤️ by Evonia</p>
+          <p className="text-xs text-white/50">© 2025 The ABC School, Pune. All rights reserved.</p>
+          <p className="text-xs text-white/50">developed by Gridaan ❤️</p>
         </div>
       </footer>
     </div>
